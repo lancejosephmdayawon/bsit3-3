@@ -1,64 +1,58 @@
-const Officerscard = ({ studImg, name, role, subRole, quotes }) => {
-	return (
-		// <div className="group lg:w-75 w-full bg-[#72BF91]/50 lg:py-7 lg:px-10 p-3 rounded-2xl text-center flex items-center flex-col">
-		// 	{/* IMAGE */}
-		// 	<div
-		// 		className="lg:w-56 w-full lg:h-56 h-37 bg-[#FFF8DE]/70 rounded-xl relative mb-2"
-		// 		style={{
-		// 			boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-		// 		}}>
-		// 		<img
-		// 			src={`/assets/students/${studImg || "pogi.png"}`}
-		// 			alt=""
-		// 			className="absolute bottom-0 rounded-xl transition-all duration-300 ease-in-out group-hover:scale-103 group-hover:-translate-y-1"
-		// 			style={{
-		// 				filter: "drop-shadow(rgba(0, 0, 0, 0.16) 0px 3px 6px) drop-shadow(rgba(0, 0, 0, 0.23) 0px 3px 6px)",
-		// 			}}
-		// 		/>
-		// 	</div>
+import { Instagram, Github } from "lucide-react";
 
-		// 	{/* TITLE CARD */}
-		// 	<h3 className="text-[#FFF8DE] font-semibold mb-1">
-		// 		{name || "Name..."}
-		// 	</h3>
-		// 	{/* ROLE */}
-		// 	<p className="text-[#9E8576] text-xs font-semibold">{role}</p>
-		// 	<p className="text-[#9E8576] text-[8px] font-light italic">
-		// 		{subRole}
-		// 	</p>
-		// 	<p className="text-[#F9F6EB] lg:text-sm text-xs italic text-wrap mt-2">
-		// 		“ {quotes || "Quotes here..."} “
-		// 	</p>
-		// </div>
+const Officerscard = ({ image, name, role, quote, fullName, nickname, hobby, color, ig, github }) => {
+    return (
+        /* Outer Container */
+        <div className="group relative h-[420px] w-full [perspective:1000px] cursor-pointer">
+            
+            <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                
+                {/* --- FRONT OF CARD --- */}
+                <div className="absolute inset-0 [backface-visibility:hidden] bg-white/20 backdrop-blur-lg border border-white/30 rounded-[30px] shadow-[0_8px_32px_0_rgba(138,110,93,0.15)] flex flex-col items-center p-5 text-center">
+                    
+                    <div className="w-full aspect-square rounded-2xl overflow-hidden mb-3 shadow-inner border-2 border-white/40">
+                        <img src={image} alt={name} className="w-full h-full object-cover object-top" />
+                    </div>
+                    
+                    <h3 className="text-[#8A6E5D] text-lg font-extrabold uppercase tracking-wide">
+                        {name}
+                    </h3>
+                    <p className="text-[#7FBF83] text-[10px] font-bold uppercase tracking-widest mt-1 mb-2">
+                        {role}
+                    </p>
+                    <p className="text-[#9E8576] italic text-xs font-medium line-clamp-2 px-1">
+                        "{quote}"
+                    </p>
+                </div>
 
-			<div className="group relative lg:w-75 w-full h-full bg-[#72BF91]/50 rounded-2xl text-center flex items-center flex-col">
-				{/* IMAGE */}
-				<img
-					src={`/assets/students/${studImg || "pogi.png"}`}
-					alt=""
-					className="w-full lg:h-91 h-53 relative lg:bottom-8 bottom-4 rounded-xl transition-all duration-300 ease-in-out group-hover:scale-103 group-hover:-translate-y-1"
-					style={{
-						filter: "drop-shadow(rgba(0, 0, 0, 0.16) 0px 3px 6px) drop-shadow(rgba(0, 0, 0, 0.23) 0px 3px 6px)",
-					}}
-				/>
+                {/* --- BACK OF CARD (Flipped) --- */}
+                <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-gradient-to-br from-white/40 to-white/10 backdrop-blur-xl border border-white/40 rounded-[30px] shadow-[0_8px_32px_0_rgba(138,110,93,0.2)] flex flex-col items-center p-6 text-center">
+                    
+                    <img src={image} alt={name} className="w-36 h-36 rounded-full object-cover object-top shadow-md border-4 border-white/50 mb-4" />
+                    
+                    <h4 className="text-[#8A6E5D] text-2xl font-bold border-b border-[#8A6E5D]/20 pb-2 mb-4 w-full">
+                        {fullName}
+                    </h4>
+                    
+                    <div className="flex flex-col gap-3 text-base text-[#9E8576] font-medium w-full text-left px-2">
+                        <p><strong className="text-[#8A6E5D]">Nickname:</strong> {nickname}</p>
+                        <p><strong className="text-[#8A6E5D]">Hobby:</strong> {hobby}</p>
+                        <p><strong className="text-[#8A6E5D]">Fav Color:</strong> {color}</p>
+                    </div>
 
-				{/* TITLE CARD */}
-				<div className="absolute w-full bottom-0 bg-[#FFF8DE] p-1 rounded-2xl transition-all duration-300 ease-in-out group-hover:scale-103">
-					<h3 className="text-[#8A6E5D] text-xs font-semibold mb-1">
-						{name || "Name..."}
-					</h3>
-					<p className="text-[#7FBF83] text-[8px] font-semibold">
-						{role}
-					</p>
-					<p className="text-[#9E8576] text-[7px] font-light italic">
-						{subRole}
-					</p>
-					<p className="text-[#B5A996] lg:text-[11px] text-[7px] italic text-wrap mt-2">
-						" {quotes || "Quotes here..."} "
-					</p>
-				</div>
-			</div>
-	);
+                    <div className="mt-auto flex gap-5">
+                        <a href={`https://instagram.com/${ig}`} target="_blank" rel="noreferrer" className="bg-[#FFF8DE]/80 p-3 rounded-full text-[#A7C796] hover:text-white hover:bg-[#7FBF83] transition-colors shadow-sm">
+                            <Instagram size={20} />
+                        </a>
+                        <a href={`https://github.com/${github}`} target="_blank" rel="noreferrer" className="bg-[#FFF8DE]/80 p-3 rounded-full text-[#A7C796] hover:text-white hover:bg-[#8A6E5D] transition-colors shadow-sm">
+                            <Github size={20} />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
 };
 
 export default Officerscard;
