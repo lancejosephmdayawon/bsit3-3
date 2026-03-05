@@ -75,16 +75,6 @@ const Contact = () => {
               Send us a Message
             </h1>
 
-            {alert && (
-              <div
-                className={`mb-6 p-4 rounded-lg text-white font-semibold ${
-                  alert.type === "success" ? "bg-green-500" : "bg-red-500"
-                }`}
-              >
-                {alert.message}
-              </div>
-            )}
-
             <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2 w-full">
@@ -147,16 +137,20 @@ const Contact = () => {
                 />
               </div>
 
-              {alert && (
-                <div
-                  className={`mb-6 p-4 rounded-lg text-white font-semibold ${
-                    alert.type === "success" ? "bg-green-500" : "bg-red-500"
-                  }`}
-                >
-                  {alert.message}
-                </div>
-              )}
-              
+            {alert && (
+              <div
+                className={`
+                mt-5 px-6 py-4 rounded-2xl font-semibold text-center 
+                border ${alert.type === "success" ? "border-green-500 bg-green-50 text-green-700" : "border-red-500 bg-red-50 text-red-700"} 
+                shadow-md
+                transition-all duration-300 ease-in-out
+                animate-slide-in
+                `}
+              >
+                {alert.message}
+              </div>
+            )}
+
               <button
                 type="submit"
                 className={`w-full bg-[#8A6E5D] hover:bg-[#7D5D4A] transition-all duration-300 ease-in-out rounded-lg py-3 text-white text-lg font-bold mt-4 shadow-md ${
