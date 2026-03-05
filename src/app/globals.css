@@ -28,17 +28,15 @@
 
 .custom-leaf-cursor {
 	cursor:
-		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%23A7C796' stroke='%238A6E5D' stroke-width='1'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1.3 8.2-1.2 6.7-3.6 9-8.3 9.8Z'/><path d='M19 2s-5 7-3 14'/></svg>")
-			16 16,
+		url("/cursor.svg") 3 3,
 		auto;
 }
 
-.custom-leaf-cursor button,
+.custom-leaf-cursor buttosn,
 .custom-leaf-cursor a,
 .custom-leaf-cursor .cursor-pointer {
 	cursor:
-		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%237FBF83' stroke='%238A6E5D' stroke-width='1.5'><path d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1.3 8.2-1.2 6.7-3.6 9-8.3 9.8Z'/><path d='M19 2s-5 7-3 14'/></svg>")
-			16 16,
+		url("/cursor.svg") 3 3,
 		pointer !important;
 }
 
