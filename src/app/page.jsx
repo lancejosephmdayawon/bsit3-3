@@ -86,9 +86,7 @@ const Home = () => {
       <Navbar />
 
       <main
-        className="w-full h-screen relative overflow-hidden 
-  bg-[url('/assets/42622.jpg')] bg-cover bg-center bg-no-repeat"
-      >
+        className="w-full h-screen relative overflow-hidden bg-[url('/assets/42622.jpg')] bg-cover bg-center bg-no-repeat">
         {/* Theme Overlay */}
         <div className="absolute inset-0 bg-[#2c2420]/65 z-10"></div>
 
