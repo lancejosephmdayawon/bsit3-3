@@ -6,6 +6,7 @@ import Announcement from "@/layout/announcement";
 import { Clock, User, BookOpen, Calendar, ChevronRight } from "lucide-react";
 
 import { calendarData } from "@/const"; 
+import AnnouncementSection from "@/component/AnnouncementSection";
 
 export default function Announce() {
     return (
@@ -89,7 +90,7 @@ export default function Announce() {
             </section>
 
             {/* STATIC ANNOUNCEMENTS SECTION */}
-            <section className="max-w-[1400px] mx-auto w-full px-4 md:px-5 pb-20">
+            {/* <section className="max-w-[1400px] mx-auto w-full px-4 md:px-5 pb-20">
                 <div className="flex items-center gap-3 mb-8">
                     <div className="bg-[#B5A996] p-2 rounded-lg text-white shadow-sm shrink-0">
                         <BookOpen size={24} />
@@ -108,7 +109,10 @@ export default function Announce() {
                         date="March 5, 2026"
                     />
                 </div>
-            </section>
+            </section> */}
+
+            {/* Dynamic Announcements */}
+            <AnnouncementSection />
 
             <Footer />
         </div>
