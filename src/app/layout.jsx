@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased custom-leaf-cursor mt-20`}>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased custom-leaf-cursor `}>
 				<AudioPlayer />
 				{children}
 			</body>
