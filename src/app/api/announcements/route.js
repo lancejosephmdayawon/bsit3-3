@@ -16,25 +16,35 @@ export async function GET() {
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: "ANNOUNCEMENTS!A:C", // Title, Message, Date
+      range: "ANNOUNCEMENTS!A:C",
     });
 
     const rows = response.data.values || [];
 
     const announcements = rows
-      .slice(1) // skip header row
-      .filter(row => row.length === 3) // only complete rows
+      .slice(1)
+      .filter(row => row.length === 3)
       .map(row => ({
         title: row[0],
         message: row[1],
         date: row[2],
       }))
-      .sort((a, b) => new Date(b.date) - new Date(a.date));
+      .sort((a, b) => {
+        const aIsTBA = a.date?.toUpperCase() === "TBA" || a.date?.toUpperCase() === "N/A" || a.date?.toUpperCase() === "";
+        const bIsTBA = b.date?.toUpperCase() === "TBA" || b.date?.toUpperCase() === "N/A" || b.date?.toUpperCase() === "";
+
+        if (aIsTBA && bIsTBA) return 0;
+        if (aIsTBA) return 1;
+        if (bIsTBA) return -1;
+
+        return new Date(a.date) - new Date(b.date);
+      });
 
     return new Response(JSON.stringify(announcements), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
+
   } catch (err) {
     console.error(err);
     return new Response(JSON.stringify({ error: "Failed to fetch data" }), {

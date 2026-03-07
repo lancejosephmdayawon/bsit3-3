@@ -38,17 +38,17 @@ export default function AnnouncementSection() {
           <BookOpen size={24} />
         </div>
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#8A6E5D]">
-          Latest Updates
+          To-Do-List
         </h2>
       </div>
 
       <div className="flex flex-col gap-4 md:gap-6">
         {loading ? (
-          <p className="text-[#8A6E5D] font-semibold">Loading announcements...</p>
+          <p className="text-[#8A6E5D] font-semibold">Loading to-do items...</p>
         ) : error ? (
           <p className="text-red-600 font-semibold italic">{error}</p>
         ) : announcements.length === 0 ? (
-          <p className="text-[#8A6E5D] font-semibold italic">No announcements yet.</p>
+          <p className="text-[#8A6E5D] font-semibold italic">No to-do items yet.</p>
         ) : (
           announcements.map((item, index) => (
             <Announcement
