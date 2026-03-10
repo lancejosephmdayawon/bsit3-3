@@ -84,7 +84,7 @@ const Home = () => {
           />
 
           <h1 className="lg:text-8xl text-6xl font-bold drop-shadow-2xl mt-6">
-            Welcome to Our Block
+            Welcome to IT 3-3 Portal
           </h1>
 
           <div className="mt-5 lg:text-xl drop-shadow-lg">

@@ -35,16 +35,16 @@ export const Students = {
             github: "github here"
         },
                 {
-            studImg: "",
+            studImg: "leo.jpg",
             name: "Aceitunas, Leo Miguel, B.",
-            nickname: "nickname here",
+            nickname: "Leo",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "“If you don’t take risks, you can’t create a future.”  - Monkey D. Luffy",
+            hobby: "music",
+            color: "red",
+            ig: "lmiggy_",
+            github: "lm-ace"
         },
                 {
             studImg: "",
@@ -131,28 +131,28 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "lei.png",
             name: "Camorongan, Christine Lei R.",
-            nickname: "nickname here",
+            nickname: "Lei",
             role: "HEAD OF SOCMED COMMITTEE",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "Own Lane, Own Wave, Own Pace",
+            hobby: "reading & playing Games",
+            color: "purple",
+            ig: "z_iellll",
+            github: "LeiCamorongan"
         },
                         {
-            studImg: "",
+            studImg: "ayse.jpeg",
             name: "Catampatan, Ayse M.",
-            nickname: "nickname here",
+            nickname: "Seeyah",
             role: "SECRETARY",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "living for the thrill",
+            hobby: "gaming",
+            color: "maroon",
+            ig: "yy_yesha",
+            github: "seeyahhh"
         },
                         {
             studImg: "",
@@ -167,15 +167,15 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "kyrsten.jpeg",
             name: "Damicog, Kyrsten Daphne M.",
-            nickname: "nickname here",
+            nickname: "daphne",
             role: "CONTENT COMMITTEE",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
+            quotes: "Last Hope - Paramore || [00:38-00:46]",
+            hobby: "music",
+            color: "violet",
+            ig: "kyrstnxx",
             github: "github here"
         },
                         {
@@ -203,16 +203,16 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "luis.jpeg",
             name: "Dela Cruz, Luis Gabriel, F.",
-            nickname: "nickname here",
+            nickname: "wizZ",
             role: "PIO 2",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "yes gawd — okurrrrrrrr */deathdrop",
+            hobby: "watching reality shows, Cooking, playing games",
+            color: "yellow, blue, violet, pink, green",
+            ig: "gagagagagabo",
+            github: "lui-sss"
         },
                         {
             studImg: "",
@@ -299,16 +299,16 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "hannah.jpg",
             name: "Felonia, Hannah Sophia N.",
-            nickname: "nickname here",
+            nickname: "hannah",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "Still blooming through the seasons of life ",
+            hobby: "gaming & sleeping 😴",
+            color: "yellow & pink",
+            ig: "hnhxsphia_",
+            github: "sophiahannah"
         },
                         {
             studImg: "kelia.jpg",
@@ -317,7 +317,7 @@ export const Students = {
             role: "PIO 1",
             subRole: "",
             quotes: "for love, to love, with love. ",
-            hobby: "reading, music, and going to cafés",
+            hobby: "reading, music, going to cafés",
             color: "Purple and Yellow",
             ig: "kasgamayo",
             github: "https://github.com/kasgamayo"
@@ -335,16 +335,16 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "evans.jpeg",
             name: "Gutierrez, John Evans L.",
-            nickname: "nickname here",
+            nickname: "Vans",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
+            quotes: "This is my peak",
+            hobby: "chess and drawing",
+            color: "crimson red",
             ig: "ig here",
-            github: "github here"
+            github: "Sucro-Law"
         },
                         {
             studImg: "",
@@ -359,28 +359,28 @@ export const Students = {
             github: "github here"
         },
                         {
-            studImg: "",
+            studImg: "lia.jpeg",
             name: "Ignacio, Lia Marielle E.",
-            nickname: "nickname here",
+            nickname: "Lia",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "Mind over matter.",
+            hobby: "reading books",
+            color: "red",
+            ig: "lmrielle_",
+            github: "lmrielle"
         },
                         {
-            studImg: "",
+            studImg: "denzel.png",
             name: "Imperial, Denzel Red D.",
-            nickname: "nickname here",
-            role: "STUDENT",
+            nickname: "Denz",
+            role: "Creatives Committee",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
-            github: "github here"
+            quotes: "party!",
+            hobby: "Playing Valorant, MLBB",
+            color: "Pink / Red",
+            ig: "d_r3di",
+            github: "Denz14-RDI"
         },
                                {
             studImg: "",
@@ -479,14 +479,14 @@ export const Students = {
             github: "github here"
         },
                                        {
-            studImg: "",
+            studImg: "tricia.jpg",
             name: "Mamaril, Tricia Mae C.",
             nickname: "nickname here",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
+            quotes: "Live as if you were to die tomorrow",
+            hobby: "gaming",
+            color: "violet",
             ig: "ig here",
             github: "github here"
         },
@@ -551,8 +551,8 @@ export const Students = {
             github: "github here"
         },
                                        {
-            studImg: "Reyes, Juan Miguel G.",
-            name: "",
+            studImg: "",
+            name: "Reyes, Juan Miguel G.",
             nickname: "nickname here",
             role: "STUDENT",
             subRole: "",
@@ -563,27 +563,27 @@ export const Students = {
             github: "github here"
         },
                                        {
-            studImg: "",
+            studImg: "maen.png",
             name: "Sebido, Mhaine M.",
             nickname: "Maen",
             role: "HEAD OF CREATIVES COMMITTEE",
             subRole: "",
-            quotes: "quotes here",
+            quotes: "go and try, reach the sky.✨",
             hobby: "watching anime",
             color: "purple, light pink",
             ig: "https://www.instagram.com/mmhne_/",
             github: "https://github.com/mhne-seb"
         },
                                        {
-            studImg: "",
+            studImg: "ivan.png",
             name: "Segura, Odracir Rod Ivan T.",
-            nickname: "nickname here",
+            nickname: "Ivan / Van",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
+            quotes: "After all this time? Always.",
+            hobby: "reading, eating, playing",
+            color: "Blue (Sky blue)",
+            ig: "_ivnwho",
             github: "github here"
         },
                                        {
@@ -611,15 +611,15 @@ export const Students = {
             github: "github here"
         },
                                        {
-            studImg: "",
+            studImg: "joshua.jpeg",
             name: "Tanawan, Joshua C.",
-            nickname: "nickname here",
+            nickname: "Tosh",
             role: "CONTENT COMMITTEE ",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
+            quotes: "To create something worthwhile",
+            hobby: "content creation",
+            color: "green",
+            ig: "tanawan_josh",
             github: "github here"
         },
                                        {
@@ -635,15 +635,15 @@ export const Students = {
             github: "github here"
         },
                                        {
-            studImg: "",
+            studImg: "jm.png",
             name: "Torres, Juan Miguel G.",
-            nickname: "nickname here",
+            nickname: "JM",
             role: "STUDENT",
             subRole: "",
-            quotes: "quotes here",
-            hobby: "hobby here",
-            color: "fav color here",
-            ig: "ig here",
+            quotes: "🤖☝🏼",
+            hobby: "gaming, music, sports",
+            color: "Sunset Orange",
+            ig: "the.jeyemz",
             github: "github here"
         },
                                        {
@@ -719,5 +719,26 @@ export const Projects = [
         descProj: "The system is a web-based platform designed to manage and monitor student violations in the university. It allows administrators to record violations and apply sanctions automatically, while students can view their records and submit appeals if needed.",
         tools: ["Blade", "PHP", "SCSS", "JavaScript"],
         developers: "Ayse Catampatan, Joshua Delos Reyes, Hannah Sophia Felonia, Roman Aragorn Lopez, Joshua Tanawan"
+    },
+        {
+        picProj: "iskolib.png",
+        titleProj: "Iskolib - Library Management System",
+        descProj: "ISKO-LIB is a web-based library management system that streamlines book, category, and inventory management for academic institutions through a centralized, user-friendly interface.",
+        tools: ["Laravel", "PHP", "Blade", "MySQL", "Figma"],
+        developers: "Lance Joseph Dayawon, Glenn Carlo Pabayo, Ian Villegas, Odracir Segura, Sarah Mae Harina, Tricia Mamaril"
+    },
+            {
+        picProj: "edvaluate.jfif",
+        titleProj: "EdValuate: School Faculty Performance Evaluation System",
+        descProj: "EdValuate is a secure platform that facilitates students to anonymously rate and provide feedback on faculty teaching performance, supporting academic development within the institution.",
+        tools: ["PHP", "JavaScript", "HTML", "CSS", "Laravel"],
+        developers: "Alessandra Abot, Aliah Joyce Beltran, Bianca Isabelle Dela Vega, Henry Louis Gran, Angel Grace Lopez"
+    },
+                {
+        picProj: "pupcom.png",
+        titleProj: "PUPCOM - Student Networking System",
+        descProj: "PUPCOM is a student-centered social networking platform designed exclusively for the PUP community.",
+        tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Figma"],
+        developers: "Imperial Denzel Red D., Reyes Juan Miguel G., Arriola Ela Juris P., Fajardo Bonna Mae T., Jamot Jonas J., Ignacio Lia Marielle E."
     },
 ];
